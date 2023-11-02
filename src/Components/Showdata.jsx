@@ -2,7 +2,7 @@ import React from 'react'
 import Table from 'react-bootstrap/Table';
 export default function Showdata({ data, onDelete , onEdit}) {
   return (
-    <div style={{marginTop:'30px'}}>
+    <div style={{marginTop:'30px', backgroundColor:'#050505'}}>
     <Table striped bordered hover variant='dark'>
     <thead>
       <tr>

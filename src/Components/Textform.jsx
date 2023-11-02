@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 const Textform = (props) => {
   const [formData, setFormData] = useState({ name: '', username: '' });
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value })
@@ -12,7 +13,7 @@ const Textform = (props) => {
     // setFormData({ name: '', username: '' });
   };
   return (
-    <div style={{display:'-ms-inline-grid',justifyContent:'center'}}>
+    <div style={{ display: '-ms-inline-grid', justifyContent: 'center' }}>
       <form className="row gy-2 gx-3 align-items-center" onSubmit={handleSubmit}>
         <div className="col-auto">
           <label className="visually-hidden" htmlFor="autoSizingInput">Name</label>
